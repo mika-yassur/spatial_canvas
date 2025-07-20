@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    padding: 24px 40px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+header .left {
+    color: #aaa;
+    width: 100px;
+}
+
+header .center {
+    font-weight: 400;
+    text-align: left;
+    margin-left: 100px;
+    flex-grow: 1;
+}
+
+header .center span {
+    font-size: 12px;
+    color: #888;
+}
+
+header .right {
+    width: 100px;
+    text-align: right;
+}
+
+header .right a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+main {
+    max-width: 800px;
+    margin: 60px 0;
+    padding: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-meta {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.project-subtitle {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 24px;
+}
+
+.advisor {
+    font-size: 14px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.section-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #111;
+}
+
+#mapbox-container-1, #mapbox-container-2, #mapbox-container-3 {
+    width: 100%;
+    height: 400px;
+    margin: 40px 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+    justify-content: center;
+}
+
+.controls button {
+    padding: 8px 16px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transition: background-color 0.2s ease;
+}
+
+.controls button:hover {
+    background-color: #e5e5e5;
+}
+
+.controls button:active {
+    background-color: #d5d5d5;
+}
+
+/* Style for form elements in controls */
+.controls select,
+.controls input[type="text"] {
+    padding: 8px 12px;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transition: border-color 0.2s ease;
+}
+
+.controls select:focus,
+.controls input[type="text"]:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.controls select {
+    min-width: 120px;
+}
+
+.controls input[type="text"] {
+    min-width: 200px;
+}
+
+.info-panel {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.info-panel h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.info-panel ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-panel li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 25px;
+}
+
+.info-panel li:before {
+    content: "📍";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+.info-panel li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    #map {
+        height: 400px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .controls button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    #map {
+        height: 300px;
+    }
+    
+    .info-panel {
+        padding: 20px;
+    }
+} 
+.map-title {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ridgewood Buildings Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Mapbox GL JS styles -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+    #mapbox-container-3 {
+      width: 100%;
+      height: 90vh;
+    }
+    #controls {
+      padding: 10px;
+      background: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    input[type="text"] {
+      padding: 6px;
+      font-size: 14px;
+      width: 200px;
+    }
+    button {
+      padding: 6px 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Controls -->
+  <div id="controls">
+    <input type="text" id="searchFeature" placeholder="Search address..." />
+    <button id="fitToData">Fit to Data (F)</button>
+    <button id="resetFilters">Reset Filters (R)</button>
+  </div>
+  
+<div id="map-title">Buildings with cornices in Ridgewood, Queens</div>
+
+  <!-- Map Container -->
+  <div id="mapbox-container-3"></div>
+
+  <!-- Mapbox GL JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  
+  <!-- Your JavaScript (this assumes it's saved as mapBox_Sketch_03.js) -->
+  <script src="mapBox_Sketch_03.js"></script>
+
+</body>
+</html>
